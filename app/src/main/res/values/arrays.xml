@@ -1,0 +1,9 @@
+<resources>
+<string-array name="Messages">
+    <item>Msg 1</item>
+    <item>Msg 2</item>
+    <item>Msg 3</item>
+    <item>Msg 4</item>
+    <item>Msg 5</item>
+</string-array>
+</resources>

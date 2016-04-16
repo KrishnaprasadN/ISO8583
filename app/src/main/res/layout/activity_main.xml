@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".VikActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:entries="@array/Messages"
+            android:foregroundGravity="center_horizontal"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/lbl_mti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/spinner"
+            android:paddingTop="30dp"
+            android:text="ISO Message: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bitmap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lbl_mti" />
+
+        <TextView
+            android:id="@+id/lbl_bitmap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/bitmap"
+            android:paddingTop="10dp"
+            android:text="Parsed Message:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lbl_bitmap" />
+
+        <!--   <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/lbl_data"
+               android:text="Data Elements:"
+               android:paddingTop="10dp"
+               android:layout_below="@+id/bitmap"
+               android:layout_alignParentLeft="true"
+               android:textStyle="bold" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/data"
+               android:layout_below="@+id/lbl_data"
+               android:layout_alignParentLeft="true"
+               android:maxLines="3" />-->
+
+    </RelativeLayout>
+</ScrollView>
